@@ -1,0 +1,86 @@
+@font-face {
+	font-family: 'AndrogyneRegular';
+	src: url('androgyne_tb-webfont.eot');
+	src: local('☺'), url('androgyne_tb-webfont.woff') format('woff'), url('androgyne_tb-webfont.ttf') format('truetype'), url('androgyne_tb-webfont.svg#webfontPYzqMaLN') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DeliciousBold';
+	src: url('delicious-bold-webfont.eot');
+	src: local('☺'), url('delicious-bold-webfont.woff') format('woff'), url('delicious-bold-webfont.ttf') format('truetype'), url('delicious-bold-webfont.svg#webfontoRW0fmmD') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  color: #000;
+  background-color: #D900FF;
+  font-family: 'Lucida Grande', sans-serif;
+  text-align: center; }
+
+input {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkite-border-radius: 5px; }
+
+input[type=text] {
+  background-image: -moz-linear-gradient(center top , #FFFFFF, #DDDDDD);
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #dddddd),color-stop(1, #ffffff));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd')";
+  border: 2px solid #999999; }
+  input[type=text]:focus {
+    background-image: -moz-linear-gradient(center top , #DDDDDD, #FFFFFF);
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #FFFFFF),color-stop(1, #DDDDDD));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#FFFFFF');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#FFFFFF')"; }
+
+input[type=submit] {
+  background-image: -moz-linear-gradient(center top , #EF9FFF, #D900FF);
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #D900FF),color-stop(1, #EF9FFF));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EF9FFF', endColorstr='#D900FF');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EF9FFF', endColorstr='#D900FF')";
+  border: 2px solid #D900FF;
+  color: #fff;
+  cursor: pointer; }
+  input[type=submit]:hover {
+    background-image: -moz-linear-gradient(center top , #D900FF, #EF9FFF);
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #EF9FFF),color-stop(1, #D900FF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D900FF', endColorstr='#EF9FFF');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D900FF', endColorstr='#EF9FFF')"; }
+
+a {
+  color: #D900FF;
+  text-decoration: underline; }
+  a:hover {
+    text-decoration: none; }
+
+#container {
+  width: 550px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: 0 0 5px #666; }
+
+h1 {
+  font-family: 'AndrogyneRegular';
+  font-weight: normal;
+  font-size: 80px;
+  font-style: normal;
+  color: #fff;
+  text-shadow: #333 0 0 5px; }
+
+h2 {
+  font-size: 18px; }
+
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 24px; }

@@ -1,27 +1,29 @@
-require 'rubygems'
 require 'sinatra'
+require 'uri'
+require 'mongo'
+
 
 get '/' do
-  begin
-    File.read(File.join('public', 'index.html'))
-  rescue
-    "Hi there, You're missing an index.html file."
-  end
+   File.read(File.join('public', 'index.html'))
 end
 
-not_found do
-  begin
-    File.read(File.join('public', '404.html'))  
-  rescue
-    'This is nowhere to be found'
-  end
+get '/style.css' do
+  content_type 'text/css', :charset => 'utf-8'
+  File.read(File.join('public', 'style.css'))
 end
 
-error 400..510 do
-  begin
-    File.read(File.join('public', '500.html'))
-  rescue    
-    'Boom'
+post '/notify' do
+  email = params[:email]
+  uri = URI.parse(ENV['MONGOHQ_URL'])
+  conn = Mongo::Connection.new(uri.host, uri.port)
+  db = conn.db(uri.path.gsub(/^\//, ''))
+  db.authenticate(uri.user, uri.password)
+  coll = db.collection("emails")
+  doc = {"email" => email}
+  coll.insert(doc)
+  if request.xhr?
+    "true"
+  else
+     File.read(File.join('public', 'success.html'))
   end
 end
-
