@@ -16,7 +16,7 @@
 
 body {
   color: #000;
-  background-color: #49E20E;
+  background-color: #734A12;
   font-family: 'Lucida Grande', sans-serif;
   text-align: center; }
 
@@ -40,21 +40,21 @@ input[type=text] {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#FFFFFF')"; }
 
 input[type=submit] {
-  background-image: -moz-linear-gradient(center top , #EF9FFF, #D900FF);
-  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #D900FF),color-stop(1, #EF9FFF));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EF9FFF', endColorstr='#D900FF');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EF9FFF', endColorstr='#D900FF')";
-  border: 2px solid #D900FF;
+  background-image: -moz-linear-gradient(center top , #EF9FFF, #49E20E);
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #49E20E),color-stop(1, #EF9FFF));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EF9FFF', endColorstr='#49E20E');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EF9FFF', endColorstr='#49E20E')";
+  border: 2px solid #49E20E;
   color: #fff;
   cursor: pointer; }
   input[type=submit]:hover {
-    background-image: -moz-linear-gradient(center top , #D900FF, #EF9FFF);
-    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #EF9FFF),color-stop(1, #D900FF));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D900FF', endColorstr='#EF9FFF');
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D900FF', endColorstr='#EF9FFF')"; }
+    background-image: -moz-linear-gradient(center top , #49E20E, #EF9FFF);
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #EF9FFF),color-stop(1, #49E20E));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#49E20E', endColorstr='#EF9FFF');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#49E20E', endColorstr='#EF9FFF')"; }
 
 a {
-  color: #D900FF;
+  color: #49E20E;
   text-decoration: underline; }
   a:hover {
     text-decoration: none; }
