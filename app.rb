@@ -28,7 +28,7 @@ post '/notify' do
   end
 end
 
-get '/6n4rj806KBMdozxeqntB'
+get '/6n4rj806KBMdozxeqntB' do
   uri = URI.parse(ENV['MONGOHQ_URL'])
   conn = Mongo::Connection.new(uri.host, uri.port)
   db = conn.db(uri.path.gsub(/^\//, ''))
