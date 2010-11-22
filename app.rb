@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'uri'
 require 'mongo'
-require 'json/pure'
+require 'json'
 
 get '/' do
    File.read(File.join('public', 'index.html'))
@@ -29,6 +29,7 @@ post '/notify' do
 end
 
 get '/6n4rj806KBMdozxeqntB' do
+  content_type :json
   uri = URI.parse(ENV['MONGOHQ_URL'])
   conn = Mongo::Connection.new(uri.host, uri.port)
   db = conn.db(uri.path.gsub(/^\//, ''))
