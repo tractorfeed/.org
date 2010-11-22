@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'uri'
 require 'mongo'
-
+require 'json/pure'
 
 get '/' do
    File.read(File.join('public', 'index.html'))
@@ -26,4 +26,13 @@ post '/notify' do
   else
      File.read(File.join('public', 'success.html'))
   end
+end
+
+get '/6n4rj806KBMdozxeqntB'
+  uri = URI.parse(ENV['MONGOHQ_URL'])
+  conn = Mongo::Connection.new(uri.host, uri.port)
+  db = conn.db(uri.path.gsub(/^\//, ''))
+  db.authenticate(uri.user, uri.password)
+  coll = db.collection("emails")
+  coll.find.each{ |row| puts row.inspect }.to_json
 end
