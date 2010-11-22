@@ -1,4 +1,3 @@
 sinatra
 mongo
 bson_ext
-json/pure
