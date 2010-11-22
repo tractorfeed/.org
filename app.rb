@@ -35,5 +35,5 @@ get '/6n4rj806KBMdozxeqntB' do
   db = conn.db(uri.path.gsub(/^\//, ''))
   db.authenticate(uri.user, uri.password)
   coll = db.collection("emails")
-  coll.find().each { |row| puts row.inspect }.to_json
+  JSON.pretty_generate(coll.find().to_a)
 end
