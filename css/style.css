@@ -1,0 +1,30 @@
+html { height: 100%; width: 100%;}
+
+body { height: 100%; width: 100%; font-family: droid-serif-1, droid-serif-2, georgia, times, serif; padding: 0; margin: 0; background: #21211f; }
+
+p { color: #fff; font-size: 0.95em; line-height: 1.65em; margin: 0 0 21px 0;}
+
+p.big{ font-size: 1.75em; line-height: 1.3em; text-shadow: 1px 1px rgba(0, 0, 0, 0.3); padding: 5px 0 0 0;}
+
+p.small{ font-size: 0.8em; line-height: 1.65em; padding: 0 0 60px 0; font-style: italic;}
+
+a { color: #ffcc00; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4); }
+
+a:hover { color: #fff; border-bottom: 1px solid rgba(255,255,255,1); -webkit-transition:all 0.2s ease-in-out;}
+
+#logo { width: 164px; height: 77px; padding: 60px 0 40px 0; margin: 0;}
+
+#about { max-width: 390px; padding: 0 40px; margin: 0; background: rgba(0,0,0,0.6); min-height: 100%; height: auto !important; height: 100%; }
+
+.vegas-loading { -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; background: #000 url(../images/loading.gif) no-repeat center center; height: 32px; left: 215px; position: fixed; top: 84px; width: 32px;  z-index:0; }
+
+.vegas-overlay { background: transparent url(../images/overlay.png); opacity: 0.5; z-index: -1; }
+
+.vegas-background { image-rendering: optimizeQuality; -ms-interpolation-mode: bicubic; z-index: -2; }
+
+@media only screen and (max-height : 768px) { 
+	p { color: #fff; font-size: 0.88em; line-height: 1.6em; margin: 0 0 21px 0;}
+	p.small{ font-size: 0.75em; line-height: 1.60em; padding: 0 0 40px 0; font-style: italic;}
+	#logo { width: 164px; height: 77px; padding: 40px 0 30px 0; margin: 0;}
+	.vegas-loading { -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; background: #000 url(../images/loading.gif) no-repeat center center; height: 32px; left: 215px; position: fixed; top: 64px; width: 32px;  z-index:0; }
+}
